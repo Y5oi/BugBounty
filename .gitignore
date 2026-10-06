@@ -1,0 +1,25 @@
+# Keep real engagement data out of version control.
+# Target working notes often contain scope detail, test accounts, and
+# finding details that shouldn't be pushed. Ignore their contents but keep
+# the template and a per-folder README if you add one.
+
+targets/*
+!targets/_TEMPLATE/
+!targets/.gitkeep
+
+# Never commit these, anywhere:
+*.env
+*.pem
+*.key
+*secret*
+*token*
+*cookie*
+credentials*
+*.session
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
